@@ -109,10 +109,6 @@ You can also view alerts in the console under **Observe -> Alerting**.
 
 === Create a Custom Alert
 
-The prometheusrule is not support for configurations for core platform alerts.
-https://docs.redhat.com/en/documentation/monitoring_stack_for_red_hat_openshift/4.20/html/support_for_monitoring/support-for-monitoring#support-considerations_support-for-monitoring
-So, we need to use the alertingrule instead.
-
 You can define your own alerts for application namespaces. Here's an example that fires when a pod has been restarting. We'll create it in the `openshift-monitoring` namespace where the built-in alerting rules live:
 
 [source,bash,role="execute"]
@@ -614,7 +610,7 @@ bash <(curl -sL https://raw.githubusercontent.com/rhpds/openshift-days-ops-showr
 **What you learned:**
 
 * OpenShift's built-in Prometheus stack provides metrics and dashboards with no setup
-* How to create custom alerting rules with PrometheusRule and configure email notifications
+* How to create custom alerting rules with AlertingRule and configure email notifications
 * How to install and configure the full logging stack (Loki + Vector)
 * How to view and filter logs in the OpenShift console
 * How to deploy the OpenTelemetry tracing pipeline (Tempo + OTel Collector)
