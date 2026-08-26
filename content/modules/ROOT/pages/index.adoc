@@ -132,11 +132,7 @@ Administrator login credentials:
 | *Password:* | {openshift_cluster_admin_password}
 |===
 
-=== Step 2: Switch to Administrator Perspective
-
-In the top-left corner of the console, you'll see a perspective switcher dropdown. Click the dropdown and select **Administrator**.
-
-=== Step 3: Dashboard Overview
+=== Step 2: Dashboard Overview
 
 Once in the Administrator perspective, you'll see the **Overview** dashboard under **Home → Overview**.
 
